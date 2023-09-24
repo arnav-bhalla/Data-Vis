@@ -14,7 +14,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/2fd2955458d59d506d1c01ef4ee7d7237e273fdd/Arnav%20Week%209/data/final.csv"
+          "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/Arnav%20Week%209/data/final.csv"
         },
         "key": "country",
         "fields": ["obese_rate"]
