@@ -4,7 +4,7 @@
   "width": 800,
   "height": 600,
   "data": {
-    "url": "js/ne_110m_admin_0_countries.topojson",
+    "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/ne_110m_admin_0_countries.topojson",
     "format": {
           "type": "topojson",
           "feature": "ne_110m_admin_0_countries"
@@ -14,9 +14,9 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "data/final.csv"
+          "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/2fd2955458d59d506d1c01ef4ee7d7237e273fdd/Arnav%20Week%209/data/final.csv"
         },
-        "key": "Country",
+        "key": "country",
         "fields": ["obese_rate"]
       }
     },
