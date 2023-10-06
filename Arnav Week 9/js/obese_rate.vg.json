@@ -123,8 +123,21 @@
           }
         ]
       }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/Arnav%20Week%209/js/ne_110m_graticules_30.prj",
+        "format": {
+          "type": "json"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "black",
+        "strokeWidth": 1,
+        "fill": "none"
+      }
     }
-  ]
-
-  ,"config": { "background": "#71a4e1" } 
+  ],
+  "config": { "background": "#71a4e1" }
 }
