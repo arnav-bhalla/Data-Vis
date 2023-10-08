@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Obesity rate per Country in 2022",
+  "title": "Obesity rate around the world in 2022",
   "width": 800,
   "height": 600,
   "data": {
