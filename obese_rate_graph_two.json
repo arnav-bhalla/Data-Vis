@@ -17,7 +17,7 @@
             {"calculate": "30", "as": "baseline"}
           ],
           "encoding": {
-            "x": {"field": "country", "type": "ordinal"},
+            "x": {"field": "country", "type": "nominal"},
             "y": {"field": "baseline", "type": "quantitative", "title": "Obesity Rate"},
             "y2": {"field": "Obesity Rate"},
             "color": {"value": "#e45755"}
