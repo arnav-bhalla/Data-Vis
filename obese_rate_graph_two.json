@@ -7,7 +7,7 @@
         "layer": [{
           "mark": "bar",
           "encoding": {
-            "x": {"field": "country", "type": "nominal", "axis": {"labelAngle": 0}},
+            "x": {"field": "country", "type": "nominal", "axis": {"labelAngle": 90}},
             "y": {"field": "obese_rate", "type": "quantitative"}
           }
         }, {
@@ -17,9 +17,9 @@
             {"calculate": "30", "as": "baseline"}
           ],
           "encoding": {
-            "x": {"field": "country", "type": "nominal"},
+            "x": {"field": "country", "type": "ordinal"},
             "y": {"field": "baseline", "type": "quantitative", "title": "Obesity Rate"},
-            "y2": {"field": "Obesity Rate"},
+            "y2": {"field": "obese_rate"},
             "color": {"value": "#e45755"}
           }
         }
