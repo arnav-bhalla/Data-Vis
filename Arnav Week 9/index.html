@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-  
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <script src="vega_lite_vis.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Homework Assignment Week 10</title>
 </head>
-<body>
-  
-<div id="obese_rate"></div>
-
-<script type="text/javascript">
-
-  var choro = "obese_rate.vg.json";
-  vegaEmbed('#obese_rate', choro).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
-
+<body class="b">
+    <h1 id="heading">Homework Assignment Week 10</h1>
+    <div id="obese_rate">
+    </div>
+    <div id="obese_rate_graph">
+    </div>
+    <div id="spacer">
+    </div>
 </body>
 </html>
