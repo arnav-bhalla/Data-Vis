@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Obesity rate around the world in 2022",
+    "width": 800,
+    "height": 600,
+    "data": {
+      "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/final.csv"
+    }, 
+    "mark"  :   "circle",
+    "encoding"  : { 
+        "x"  : {          
+            "field"  :   "obese_rate",
+            "type"  :   "quantitative",
+            "title"  :   "Obesity Rate"      
+        },        
+        "y"  : {          
+            "field"  :   "health_index",         
+            "type"  :   "quantitative", 
+            "title" : "Health Index"     
+        },       
+        "color"  : {         
+            "field"  :   "region",         
+            "type"  :   "nominal" 
+        } 
+    } 
+}    
