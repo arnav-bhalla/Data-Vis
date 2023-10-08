@@ -8,12 +8,12 @@
           "mark": "bar",
           "encoding": {
             "x": {"field": "country", "type": "nominal", "axis": {"labelAngle": 0}},
-            "y": {"field": "obesity_rate", "type": "quantitative"}
+            "y": {"field": "obese_rate", "type": "quantitative"}
           }
         }, {
           "mark": "bar",
           "transform": [
-            {"filter": "datum.obesity_rate >= 30"},
+            {"filter": "datum.obese_rate >= 30"},
             {"calculate": "30", "as": "baseline"}
           ],
           "encoding": {
