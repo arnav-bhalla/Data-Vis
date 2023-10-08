@@ -21,6 +21,10 @@
         "color"  : {         
             "field"  :   "region",         
             "type"  :   "nominal" 
-        } 
+        },
+        "tooltip" : [
+          {"field": "obese_rate", "type" : "quantitative", "title": "Obesity Rate"},
+          {"field": "health_index", "type" : "quantitative", "title": "Health Index"}
+        ]
     } 
 }    
