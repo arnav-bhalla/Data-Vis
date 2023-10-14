@@ -122,5 +122,6 @@
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     }
-  ]
+  ], 
+  "background" : "#275ef6"
 }
