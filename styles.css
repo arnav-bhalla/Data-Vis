@@ -5,4 +5,17 @@
 	right: 100px;
 	/*height: 1000px;
 	width: 800px;*/
+
+
+.scatter-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+.scatter-grid div {
+	    border: 1px solid #ccc;
+        padding: 10px;
+    }
+
 }
