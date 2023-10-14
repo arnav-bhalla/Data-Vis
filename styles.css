@@ -29,14 +29,14 @@
 
 html,
 body {
-		background-color: #98DBCE;
+		background-color: #275ef6;
 	}
 	
 h1 {
 		text-align: left;
 		font-size: 40px;
 		font-family: 'Space Grotesk', sans-serif;
-		color: #993939;
+		color: #12b1d5;
 	}
 	
 h2 {
@@ -167,7 +167,7 @@ p {
 #heading {
 		font-family: 'Space Grotesk', sans-serif;
 		text-align: center;
-		color: #D2FF04;
+		color: #ff6a00;
 		font-size: 87px;
 	}
 	
