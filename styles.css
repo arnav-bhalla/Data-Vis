@@ -5,7 +5,7 @@
 	right: 100px;
 }
 
-#scatter-grid {
+.scatter-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
@@ -27,45 +27,46 @@
         margin-right: 20px; 
     }
 
-	body {
+html,
+body {
 		background-color: #98DBCE;
 	}
 	
-	h1 {
+h1 {
 		text-align: left;
 		font-size: 40px;
 		font-family: 'Space Grotesk', sans-serif;
 		color: #993939;
 	}
 	
-	h2 {
+h2 {
 		text-align: left;
 		font-size: 30px;
 		font-family: 'Space Grotesk', sans-serif;
 	}
 	
-	h3 {
+h3 {
 		text-align: left;
 		font-size: 20px;
 		font-family: 'Space Grotesk', sans-serif;
 	}
 	
-	p {
+p {
 		font-family: 'Space Grotesk', sans-serif;
 		font-size: 25px;
 	}
 	
-	.spacing {
+.spacing {
 		padding-bottom: 50px;
 	}
 	
-	.header_img {
+.header_img {
 		position: relative;
 		text-align: center;
 		opacity: 0.4;
 	}
 	
-	.header_txt {
+.header_txt {
 		position: absolute;
 		text-align: center;
 		top: 25%;
@@ -76,38 +77,38 @@
 	}
 	
 	
-	#text_title {
+#text_title {
 		margin-left: 100px;
 		margin-right: 100px;
 		text-align: left;
 	}
 	
-	#text_title h1 a {
+#text_title h1 a {
 		text-decoration: none;
 	}
 	
-	#img_title img {
+#img_title img {
 		margin-top: 30px;
 		width: 300px;
 	}
 	
-	.pure-u-1 {
+.pure-u-1 {
 		margin-top: 30px;
 	}
 	
-	#text_intro {
+#text_intro {
 		margin-left: 100px;
 		margin-right: 100px;
 		text-align: left;
 	}
 	
-	#text_bubble {
+#text_bubble {
 		margin-left: 100px;
 		margin-right: 100px;
 		text-align: left;
 	}
 	
-	#nyc_map {
+#nyc_map {
 		top: 0px;
 		bottom: 100px;
 		left: 100px;
@@ -116,13 +117,13 @@
 		margin-bottom: 50px;
 	}
 	
-	#text_map {
+#text_map {
 		margin-left: 100px;
 		margin-right: 100px;
 		text-align: left;
 	}
 	
-	#borough_rooms {
+#borough_rooms {
 		top: 0px;
 		bottom: 100px;
 		left: 100px;
@@ -131,13 +132,13 @@
 		margin-bottom: 50px;
 	}
 	
-	#text_line {
+#text_line {
 		margin-left: 100px;
 		margin-right: 100px;
 		text-align: right;
 	}
 	
-	#Sport_medals {
+#Sport_medals {
 		top: 0px;
 		bottom: 100px;
 		left: 100px;
@@ -146,24 +147,24 @@
 		margin-bottom: 50px;
 	}
 	
-	#text_conclusion {
+#text_conclusion {
 		margin-left: 100px;
 		margin-right: 100px;
 		text-align: left;
 	}
 	
-	#text_data {
+#text_data {
 		margin-left: 100px;
 		margin-right: 100px;
 		text-align: left;
 	}
 	
-	#text_data p {
+#text_data p {
 		font-size: 10px;
 	}
 	
 	
-	#heading {
+#heading {
 		font-family: 'Space Grotesk', sans-serif;
 		text-align: center;
 		color: #D2FF04;
@@ -171,12 +172,12 @@
 	}
 	
 	
-	#nyc_picture {
+#nyc_picture {
 		max-width: 100%;
 		height: 400px;
 	}
 	
-	#borough_price {
+#borough_price {
 		top: 0px;
 		bottom: 100px;
 		left: 100px;
@@ -185,7 +186,7 @@
 		margin-bottom: 50px;
 	}
 	
-	#freq_price {
+#freq_price {
 		top: 0px;
 			bottom: 100px;
 			left: 100px;
@@ -194,7 +195,7 @@
 			margin-bottom: 50px;
 	}
 	
-	#nights_avail {
+#nights_avail {
 		top: 0px;
 		bottom: 100px;
 		left: 100px;
