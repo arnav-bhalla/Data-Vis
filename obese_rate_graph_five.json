@@ -1,0 +1,58 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/National_Obesity_By_State.csv"
+        },
+        "layer": [
+          {
+            "mark": "bar",  
+            "encoding": {
+              "x": {"field": "NAME", "type": "nominal", "axis": {"labelAngle": 60}},
+              "y": {"field": "Obesity", "type": "quantitative"}
+            }
+          },
+          {
+            "mark": "bar",
+            "transform": [
+              {"filter": "datum.Obesity > 30"},
+              {"calculate": "30", "as": "baseline"}
+            ],
+            "encoding": {
+              "x": {"field": "NAME", "type": "ordinal"},
+              "y": {"field": "baseline", "type": "quantitative", "title": "Obesity Rate"},
+              "y2": {"field": "Obesity"},
+              "color": {"value": "#e45755"}
+            }
+          }
+        ]
+      },
+      {
+        "data": {
+          "values": [{}]
+        },
+        "encoding": {
+          "y": {"datum": 30}
+        },
+        "layer": [
+          {
+            "mark": "rule"
+          },
+          {
+            "mark": {
+              "type": "text",
+              "align": "right",
+              "baseline": "line-top",
+              "dx": -2,
+              "dy": -2,
+              "x": "width",
+              "text": "Extreme risk level",
+              "color": "#000000"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

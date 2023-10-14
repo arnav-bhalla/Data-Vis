@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "A scatter plot showing Obesity Rates and their effect on Health Index around the world in 2022",
+    "width": 400,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/final.csv"
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "circle",
+          "size": 80
+        },
+        "params": [
+          {
+            "name": "chooseRegion",
+            "select": {
+              "type": "point",
+              "fields": ["region"]
+            },
+            "bind": "legend"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "obese_rate",
+            "type": "quantitative",
+            "title": "Obesity Rate"
+          },
+          "y": {
+            "field": "health_index",
+            "type": "quantitative",
+            "title": "Health Index",
+            "scale": {"domain": [10, 80]}
+          },
+          "color": {
+            "field": "region",
+            "type": "nominal"
+          },
+          "opacity": {
+            "condition": {"param": "chooseRegion", "value": 1},
+            "value": 0.2
+          },
+          "tooltip": [
+            {"field": "country", "type": "nominal", "title": "Country"},
+            {"field": "obese_rate", "type": "quantitative", "title": "Obesity Rate"},
+            {"field": "health_index", "type": "quantitative", "title": "Health Index"}
+          ]
+        }
+      }
+    ]
+  }
+  

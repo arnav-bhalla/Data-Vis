@@ -1,0 +1,33 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/final.csv"
+    },
+    "transform": [
+      {
+        "aggregate": [
+          { "op": "mean", "field": "obese_rate", "as": "avg_obese_rate" }
+        ],
+        "groupby": ["region"]
+      }
+    ],
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "region",
+        "type": "ordinal",
+        "axis": { "title": "Region" }
+      },
+      "y": {
+        "field": "avg_obese_rate",
+        "type": "quantitative",
+        "axis": { "title": "Average Obese Rate" }
+      },
+      "color": {
+        "field": "region",
+        "type": "nominal"
+      }
+    }
+  }
+  
+  

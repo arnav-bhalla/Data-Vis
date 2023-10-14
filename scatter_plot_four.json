@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "A scatter plot showing Obesity Rates and their effect on Genuine Progress Indicator around the world in 2022",
+    "width": 400,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/final.csv"
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "circle",
+          "size": 80
+        },
+        "params": [
+          {
+            "name": "chooseRegion",
+            "select": {
+              "type": "point",
+              "fields": ["region"]
+            },
+            "bind": "legend"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "obese_rate",
+            "type": "quantitative",
+            "title": "Obesity Rate"
+          },
+          "y": {
+            "field": "gpi",
+            "type": "quantitative",
+            "title": "Genuine Progress Indicator",
+            "scale": {"domain": [0.5, 4]}
+          },
+          "color": {
+            "field": "region",
+            "type": "nominal"
+          },
+          "opacity": {
+            "condition": {"param": "chooseRegion", "value": 1},
+            "value": 0.2
+          },
+          "tooltip": [
+            {"field": "country", "type": "nominal", "title": "Country"},
+            {"field": "obese_rate", "type": "quantitative", "title": "Obesity Rate"},
+            {"field": "gpi", "type": "quantitative", "title": "Genuine Progress Indicator"}
+          ]
+        }
+      }
+    ]
+  }
+  

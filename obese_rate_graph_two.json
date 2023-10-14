@@ -1,48 +1,61 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "layer": [{
-        "data": {
-            "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/final.csv" 
-        },
-        "layer": [{
-          "mark": "bar",
-          "encoding": {
-            "x": {"field": "country", "type": "nominal", "axis": {"labelAngle": 90}},
-            "y": {"field": "obese_rate", "type": "quantitative"}
-          }
-        }, {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/final.csv"
+      },
+      "layer": [
+        {
           "mark": "bar",
           "transform": [
-            {"filter": "datum.obese_rate >= 30"},
+            {"filter": "datum.obese_rate > 30"},
+            {"calculate": "30", "as": "baseline"}
+          ],  
+          "encoding": {
+            "x": {"field": "country", "type": "nominal", "axis": {"labelAngle": 60}},
+            "y": {"field": "obese_rate", "type": "quantitative"}
+          }
+        },
+        {
+          "mark": "bar",
+          "transform": [
+            {"filter": "datum.obese_rate > 30"},
             {"calculate": "30", "as": "baseline"}
           ],
           "encoding": {
-            "x": {"field": "country", "type": "ordinal"},
+            "x": {"field": "country", "type": "ordinal", "title" : "Country"},
             "y": {"field": "baseline", "type": "quantitative", "title": "Obesity Rate"},
             "y2": {"field": "obese_rate"},
             "color": {"value": "#e45755"}
           }
         }
-      ]}, {
-        "data": {
-           "values": [{}]
-        },
-        "encoding": {
-          "y": {"datum": 30}
-        },
-        "layer": [{
+      ]
+    },
+    {
+      "data": {
+        "values": [{}]
+      },
+      "encoding": {
+        "y": {"datum": 30}
+      },
+      "layer": [
+        {
           "mark": "rule"
-        }, {
+        },
+        {
           "mark": {
             "type": "text",
             "align": "right",
-            "baseline": "bottom",
+            "baseline": "line-top",
             "dx": -2,
             "dy": -2,
             "x": "width",
-            "text": "Extreme risk level"
+            "text": "Extreme risk level",
+            "color": "#000000"
           }
-        }]
-      }
-    ]
-  }
+        }
+      ]
+    }
+  ]
+}
