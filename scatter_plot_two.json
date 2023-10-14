@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "A scatter plot showing Obesity Rates and their effect on Health Index around the world in 2022",
+    "title": "A scatter plot showing Obesity Rates and their effect on the HDR Rate around the world in 2022",
     "width": 400,
     "height": 400,
     "data": {

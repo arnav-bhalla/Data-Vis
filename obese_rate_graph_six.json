@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A vertical box plot showing median, min, and max body mass of penguins.",
+    "description": "A vertical box plot showing median, min, and max body mass of Obesity Rates in the US.",
     "data": {"url": "https://raw.githubusercontent.com/arnav-bhalla/Data-Vis/main/NCD_world.csv"},
     "width": 400,
     "height": 400,

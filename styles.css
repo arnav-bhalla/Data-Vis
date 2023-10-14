@@ -3,8 +3,6 @@
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
 
 
 .scatter-grid {
@@ -17,5 +15,18 @@
 	    border: 1px solid #ccc;
         padding: 10px;
     }
+
+	
+.graph-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.graph-container > div {
+        flex: 1;
+        margin-right: 20px; 
+    }
+
+
 
 }

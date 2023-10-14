@@ -45,3 +45,21 @@ vegaEmbed("#obese_rate_graph_three", vg_8).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 
 }).catch(console.error);
+
+var vg_9 = "obese_rate_graph_four.json";
+vegaEmbed("#obese_rate_graph_four", vg_9).then(function(result) {
+// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+
+}).catch(console.error);
+
+var vg_10 = "obese_rate_graph_five.json";
+vegaEmbed("#obese_rate_graph_five", vg_10).then(function(result) {
+// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+
+}).catch(console.error);
+
+var vg_11 = "obese_rate_graph_six.json";
+vegaEmbed("#obese_rate_graph_six", vg_11).then(function(result) {
+// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+
+}).catch(console.error);
